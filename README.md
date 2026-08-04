@@ -1,1 +1,1 @@
-# Claude assisted dashboard
+# Claude Vibe coded Dashboard
