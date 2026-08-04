@@ -1,16 +1,16 @@
 :root {
-  --bg: #efecf4;
-  --bg-card: #ffffff;
-  --ink: #26232e;
-  --ink-soft: #625d70;
-  --line: #d9d3e3;
+  --bg: #16141c;
+  --bg-card: #201d28;
+  --ink: #f1eef7;
+  --ink-soft: #9a93ab;
+  --line: #35303f;
 
-  --me: #3e7c7b;
-  --me-soft: #dcebea;
-  --gf: #c1546b;
-  --gf-soft: #f6dde2;
-  --both: #7d5f8f;
-  --both-soft: #e6dcee;
+  --S: #6bb5b0;
+  --S-soft: #223836;
+  --J: #e0879c;
+  --J-soft: #70063d;
+  --both: #b09bc7;
+  --both-soft: #322a40;
 
   --accent: var(--ink);
   --accent-soft: var(--line);
@@ -21,13 +21,13 @@
   --radius: 14px;
 }
 
-[data-section="me"] {
-  --accent: var(--me);
-  --accent-soft: var(--me-soft);
+[data-section="S"] {
+  --accent: var(--S);
+  --accent-soft: var(--S-soft);
 }
-[data-section="gf"] {
-  --accent: var(--gf);
-  --accent-soft: var(--gf-soft);
+[data-section="J"] {
+  --accent: var(--J);
+  --accent-soft: var(--J-soft);
 }
 [data-section="both"] {
   --accent: var(--both);
@@ -40,6 +40,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  color-scheme: dark;
 }
 
 body {
@@ -108,17 +109,27 @@ a {
   cursor: pointer;
 }
 
+.venn-circle-S {
+  fill: var(--S);
+}
+.venn-circle-J {
+  fill: var(--J);
+}
+.venn-lens {
+  fill: var(--both);
+}
+
 .venn-link:hover .venn-shape,
 .venn-link:focus-visible .venn-shape {
   filter: brightness(1.08);
 }
 
-.venn-link:hover .venn-circle-me,
-.venn-link:focus-visible .venn-circle-me {
+.venn-link:hover .venn-circle-S,
+.venn-link:focus-visible .venn-circle-S {
   transform: translateX(-6px);
 }
-.venn-link:hover .venn-circle-gf,
-.venn-link:focus-visible .venn-circle-gf {
+.venn-link:hover .venn-circle-J,
+.venn-link:focus-visible .venn-circle-J {
   transform: translateX(6px);
 }
 .venn-link:hover .venn-lens,
@@ -155,7 +166,7 @@ a {
 /* ---------- List page ---------- */
 
 .page {
-  max-width: 640px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 28px 20px 80px;
 }
@@ -244,7 +255,7 @@ a {
   font-size: 14px;
   cursor: pointer;
   background: var(--accent);
-  color: #fff;
+  color: #16141c;
 }
 
 .btn:hover {
@@ -263,8 +274,9 @@ a {
 }
 
 .lists {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  align-items: start;
   gap: 18px;
 }
 
@@ -337,7 +349,7 @@ a {
 }
 
 .list-item button:hover {
-  color: var(--gf);
+  color: var(--J);
 }
 
 .add-item-form {

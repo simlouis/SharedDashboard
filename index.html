@@ -3,39 +3,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Us — shared dashboard</title>
+  <title>Shared dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main class="home">
-    <p class="home-eyebrow">shared dashboard</p>
-    <h1 class="home-title">us.</h1>
+    <p class="home-eyebrow">Shared dashboard</p>
+    <h1 class="home-title">Hey</h1>
     <p class="home-sub">Pick a side, or the middle.</p>
 
     <div class="venn-wrap">
-      <svg viewBox="0 0 520 360" role="img" aria-label="Choose Me, GF, or Both">
+      <svg viewBox="0 0 520 360" role="img" aria-label="Choose S, J, or Both">
         <defs>
-          <clipPath id="clipGF">
+          <clipPath id="clipJ">
             <circle cx="335" cy="180" r="130" />
           </clipPath>
         </defs>
 
-        <a href="list.html?section=me" class="venn-link" aria-label="Go to Me's lists">
-          <circle class="venn-shape venn-circle-me" cx="185" cy="180" r="130" fill="#3e7c7b" />
+        <a href="list.html?section=S" class="venn-link" aria-label="Go to S's lists">
+          <circle class="venn-shape venn-circle-S" cx="185" cy="180" r="130" />
         </a>
 
-        <a href="list.html?section=gf" class="venn-link" aria-label="Go to GF's lists">
-          <circle class="venn-shape venn-circle-gf" cx="335" cy="180" r="130" fill="#c1546b" />
+        <a href="list.html?section=J" class="venn-link" aria-label="Go to J's lists">
+          <circle class="venn-shape venn-circle-J" cx="335" cy="180" r="130" />
         </a>
 
         <a href="list.html?section=both" class="venn-link" aria-label="Go to shared lists">
-          <circle class="venn-shape venn-lens" cx="185" cy="180" r="130" clip-path="url(#clipGF)" fill="#7d5f8f" />
+          <circle class="venn-shape venn-lens" cx="185" cy="180" r="130" clip-path="url(#clipJ)" />
         </a>
 
-        <text x="130" y="188" class="venn-label" font-size="26" text-anchor="middle">Me</text>
-        <text x="390" y="188" class="venn-label" font-size="26" text-anchor="middle">GF</text>
+        <text x="130" y="188" class="venn-label" font-size="26" text-anchor="middle">S</text>
+        <text x="390" y="188" class="venn-label" font-size="26" text-anchor="middle">J</text>
         <text x="260" y="184" class="venn-label-both" font-size="15" text-anchor="middle">Both</text>
       </svg>
     </div>

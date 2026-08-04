@@ -1,7 +1,7 @@
 (function () {
   const SECTIONS = {
-    me: { label: "Me", title: "Me.", sub: "Just for you. No one else can see this browser's copy.", key: "dash_lists_me" },
-    gf: { label: "GF", title: "GF.", sub: "Just for her. No one else can see this browser's copy.", key: "dash_lists_gf" },
+    S: { label: "S", title: "S.", sub: "Just for S. No one else can see this browser's copy.", key: "dash_lists_S" },
+    J: { label: "J", title: "J", sub: "Just for J. No one else can see this browser's copy.", key: "dash_lists_J" },
     both: { label: "Both", title: "Both.", sub: "The shared stuff. Groceries, plans, the whole list.", key: "dash_lists_both" },
   };
 
