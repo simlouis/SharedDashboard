@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lists</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <div class="top-bar">
+      <a href="index.html" class="back-link">&larr; home</a>
+      <span class="section-tag"><span class="dot"></span><span id="section-name"></span></span>
+    </div>
+
+    <h1 class="page-title" id="page-title"></h1>
+    <p class="page-sub" id="page-sub"></p>
+
+    <form class="new-list-form" id="new-list-form">
+      <input type="text" id="new-list-input" placeholder="New list name, e.g. Groceries" autocomplete="off" />
+      <button type="submit" class="btn">Add list</button>
+    </form>
+
+    <div class="lists" id="lists"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
